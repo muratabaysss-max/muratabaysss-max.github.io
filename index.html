@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Murat Abay Sürücü - Yazılım, teknoloji ve proje geliştirme portföyü.">
+  <title>Murat Abay Content | Yazılım & Teknoloji</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#121a2e; --text:#edf2ff; --muted:#a9b5cf; --accent:#69e0c0; --line:rgba(255,255,255,.12); }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif; background:radial-gradient(circle at 85% 0%,#18334a 0,transparent 32%),var(--bg); color:var(--text); line-height:1.65; }
+    a { color:inherit; }
+    .wrap { width:min(1080px,92%); margin:auto; }
+    header { padding:22px 0; border-bottom:1px solid var(--line); }
+    nav { display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap; }
+    .brand { font-weight:800; letter-spacing:.04em; }
+    .links { display:flex; gap:18px; flex-wrap:wrap; }
+    .links a { color:var(--muted); text-decoration:none; font-size:.94rem; }
+    .links a:hover { color:var(--accent); }
+    .hero { padding:92px 0 76px; display:grid; grid-template-columns:1.5fr .8fr; gap:42px; align-items:center; }
+    .eyebrow { color:var(--accent); font-weight:700; text-transform:uppercase; letter-spacing:.14em; font-size:.78rem; }
+    h1 { font-size:clamp(2.6rem,7vw,5.2rem); line-height:1.02; margin:14px 0 20px; letter-spacing:-.055em; }
+    .lead { color:var(--muted); font-size:1.12rem; max-width:650px; }
+    .actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:28px; }
+    .btn { display:inline-block; padding:11px 17px; border-radius:12px; text-decoration:none; font-weight:750; border:1px solid var(--line); }
+    .btn.primary { background:var(--accent); color:#07131a; border-color:var(--accent); }
+    .hero-card,.card { background:rgba(18,26,46,.86); border:1px solid var(--line); border-radius:20px; padding:24px; }
+    .hero-card { box-shadow:0 20px 70px rgba(0,0,0,.22); }
+    .hero-card .big { color:var(--accent); font-size:2.5rem; font-weight:850; line-height:1; }
+    .hero-card p { color:var(--muted); margin-bottom:0; }
+    section { padding:42px 0; }
+    h2 { font-size:1.8rem; margin:0 0 20px; letter-spacing:-.03em; }
+    .section-intro { color:var(--muted); max-width:720px; margin-top:-10px; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    .card h3 { margin:0 0 8px; font-size:1.15rem; }
+    .card p { color:var(--muted); margin:0; }
+    .taglist { display:flex; flex-wrap:wrap; gap:10px; }
+    .tag { border:1px solid var(--line); background:rgba(255,255,255,.04); padding:8px 13px; border-radius:999px; color:#dce7fa; font-size:.94rem; }
+    .timeline { border-left:2px solid rgba(105,224,192,.5); padding-left:22px; display:grid; gap:22px; }
+    .timeline-item { position:relative; }
+    .timeline-item:before { content:""; position:absolute; left:-29px; top:8px; width:12px; height:12px; background:var(--accent); border-radius:50%; }
+    .timeline-item p { color:var(--muted); margin:5px 0 0; }
+    .note { color:var(--muted); font-size:.9rem; }
+    footer { border-top:1px solid var(--line); padding:28px 0 42px; color:var(--muted); }
+    @media(max-width:720px) { .hero { grid-template-columns:1fr; padding:65px 0 45px; } .grid { grid-template-columns:1fr; } .links { gap:12px; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Ana menü">
+      <div class="brand">Murat Abay <span style="color:var(--accent)">Content</span></div>
+      <div class="links">
+        <a href="#hakkimda">Hakkımda</a><a href="#beceriler">Teknolojiler</a><a href="#projeler">Projeler</a><a href="#basarilar">Başarılar</a><a href="#iletisim">İletişim</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="hero">
+    <div>
+      <div class="eyebrow">Yazılım • Teknoloji • Proje Geliştirme</div>
+      <h1>Murat Abay<br><span style="color:var(--accent)">Sürücü.</span></h1>
+      <p class="lead">Küçük yaşlardan beri teknolojiyle ilgilenen; yazılım, problem çözme ve toplumsal fayda odaklı projeler geliştirmeye odaklanan genç bir teknoloji meraklısı.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projeler">Projelerimi keşfet</a>
+        <a class="btn" href="#iletisim">İletişim</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <div class="big">7+</div>
+      <h3>Yıllara yayılan teknoloji ilgisi</h3>
+      <p>7 yaşından itibaren bilgisayar, yazılım ve teknoloji alanlarına duyduğum ilgi; zamanla proje geliştirme ve yarışma deneyimine dönüştü.</p>
+    </aside>
+  </div>
+
+  <section id="hakkimda">
+    <h2>Hakkımda</h2>
+    <p class="section-intro">Yazılımı yalnızca kod yazmak olarak değil, gerçek problemlere çözüm üretmenin bir yolu olarak görüyorum. Farklı teknolojiler öğreniyor, fikirleri çalışan projelere dönüştürmek ve kendimi sürekli geliştirmek için çalışıyorum.</p>
+    <div class="grid">
+      <article class="card"><h3>İlgi alanlarım</h3><p>Yazılım geliştirme, web teknolojileri, Python ile uygulama geliştirme, yapay zekâ destekli etkileşim sistemleri ve sosyal fayda odaklı teknoloji projeleri.</p></article>
+      <article class="card"><h3>Çalışma yaklaşımım</h3><p>Araştırma, deneme, hata ayıklama ve ekip çalışmasıyla fikirleri geliştirilebilir prototiplere dönüştürmeye önem veriyorum.</p></article>
+    </div>
+  </section>
+
+  <section id="beceriler">
+    <h2>Teknolojiler ve beceriler</h2>
+    <p class="section-intro">Üzerinde çalıştığım programlama dilleri, web teknolojileri ve araçlar:</p>
+    <div class="taglist">
+      <span class="tag">Python</span><span class="tag">HTML</span><span class="tag">CSS</span>
+      <span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">SQL</span>
+      <span class="tag">MySQL</span><span class="tag">Ruby</span><span class="tag">Bootstrap</span>
+      <span class="tag">PyCharm</span><span class="tag">Web Geliştirme</span><span class="tag">Veritabanı Temelleri</span>
+    </div>
+    <p class="note" style="margin-top:14px">Not: Teknoloji listesi mevcut öğrenim ve çalışma alanlarını gösterir; uzmanlık seviyeleri proje ve deneyimle birlikte gelişmektedir.</p>
+  </section>
+
+  <section id="projeler">
+    <h2>Öne çıkan projeler</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Virtual Mouse — Kamera Kontrollü Sanal Fare</h3>
+        <p>Python ve bilgisayarlı görü yaklaşımıyla, el hareketlerini kullanarak bilgisayar imlecini kontrol etmeyi hedefleyen proje. Amaç, hareket kısıtlılığı yaşayan bireylerin bilgisayar etkileşimini kolaylaştırabilecek alternatif bir arayüz geliştirmek.</p>
+      </article>
+      <article class="card">
+        <h3>Holoclick — Proje Takımı</h3>
+        <p>Virtual Mouse projesi kapsamında takım kaptanlığı ve proje koordinasyonu deneyimi. Fikir geliştirme, teknik çalışma ve sunum süreçlerinde ekip çalışmasına odaklanma.</p>
+      </article>
+      <article class="card">
+        <h3>Every Water Drop Counts</h3>
+        <p>Su tasarrufu ve su kıtlığı konusunda farkındalık oluşturmayı amaçlayan eTwinning iş birliği projesi. Uluslararası ekip çalışması, araştırma ve dijital içerik üretimi deneyimi.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="basarilar">
+    <h2>Başarılar ve deneyimler</h2>
+    <div class="timeline">
+      <div class="timeline-item"><strong>Adana Robotik Kodlama Şenliği</strong><p>Biyomimikri alanında Adana birinciliği. Ayrıca proje çalışmalarıyla etkinlikte dikkat çeken ve beğeni alan ekipler arasında yer alma deneyimi.</p></div>
+      <div class="timeline-item"><strong>TEKNOFEST proje deneyimi</strong><p>Holoclick ekibiyle teknoloji ve sosyal fayda odaklı Virtual Mouse projesi üzerinde çalışma ve yarışma başvuru deneyimi.</p></div>
+      <div class="timeline-item"><strong>eTwinning — Uluslararası iş birliği</strong><p>Every Water Drop Counts projesinde su kaynakları ve sürdürülebilirlik temalı uluslararası çalışmalara katılım.</p></div>
+      <div class="timeline-item"><strong>Uzun soluklu teknoloji ilgisi</strong><p>7 yaşından itibaren bilgisayar ve teknoloji alanlarına ilgi; zaman içinde yazılım öğrenme ve proje geliştirme çalışmalarına yönelme.</p></div>
+    </div>
+  </section>
+
+  <section id="iletisim">
+    <h2>İletişim</h2>
+    <div class="card">
+      <h3>Bir proje veya iş birliği için iletişime geçin</h3>
+      <p>Bu bölüme paylaşmak istediğin profesyonel e-posta adresini ve varsa GitHub / LinkedIn / diğer portföy bağlantılarını ekleyebilirsin.</p>
+      <p class="note" style="margin-top:12px">E-posta: <a href="mailto:muratabaysss@gmail.com"><strong>muratabaysss@gmail.com</strong></a><br>GitHub: <strong>Buraya GitHub profil bağlantını ekle</strong></p>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">© 2026 Murat Abay Sürücü · Yazılım ve teknoloji portföyü</div></footer>
+</body>
+</html>
